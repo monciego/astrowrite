@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/logo.png";
+
+const { title = "Astrowrite" } = Astro.props;
 ---
 
 <html lang="en">
@@ -15,7 +17,7 @@ import logo from "../images/logo.png";
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astrowrite</title>
+    <title>{title}</title>
   </head>
   <body class="font-sans">
     <nav class="my-8">
