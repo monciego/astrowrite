@@ -18,9 +18,63 @@ import logo from "../images/logo.png";
     <title>Astrowrite</title>
   </head>
   <body class="font-sans">
-    <h1 class="bg-indigo-600 text-white py-2 px-6 text-center">Astrowrite</h1>
+    <nav class="my-6">
+      <div class="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
+        <div
+          class="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end"
+        >
+          <a
+            href="/"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            About
+          </a>
+          <a
+            href="/contact"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            Contact
+          </a>
+        </div>
 
-    <div class="px-8 mx-auto xl:px-24">
+        <div class="flex w-full items-center justify-between md:w-auto">
+          <a href="/">
+            <Image src={logo} alt="logo" />
+          </a>
+        </div>
+
+        <div
+          class="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row"
+        >
+          <a
+            href="/archive"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            Archive
+          </a>
+          <a
+            href="/categories"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            Categories
+          </a>
+          <a
+            href="Search"
+            class="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-8 mx-auto py-10 xl:px-24">
       <slot />
     </div>
   </body>
