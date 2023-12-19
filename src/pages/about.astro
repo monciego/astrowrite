@@ -1,56 +1,97 @@
 ---
-import { Image } from 'astro:assets';
-import member1 from "../images/member-1.jpg"
-import member2 from "../images/member-2.jpg"
-import member3 from "../images/member-3.jpeg"
+import { Image } from "astro:assets";
+import member1 from "../images/member-1.jpg";
+import member2 from "../images/member-2.jpg";
+import member3 from "../images/member-3.jpeg";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About - Astrowrite</title>
-	</head>
-	<body class='font-sans'>
-		<section class=' px-8 mx-auto xl:px-24'>
-			<h1 class=" mb-3 mt-2 text-center text-3xl font-semibold tracking-tight text-slate-950 lg:text-4xl lg:leading-snug">
-				About
-			</h1>
-			<div class="text-center">
-				<p class="text-lg">Meet the stellar minds behind our Astro-powered team.</p>
-			</div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>About - Astrowrite</title>
+  </head>
+  <body class="font-sans">
+    <section class="px-8 mx-auto xl:px-24">
+      <h1
+        class="mb-3 mt-2 text-center text-3xl font-semibold tracking-tight text-slate-950 lg:text-4xl lg:leading-snug"
+      >
+        About
+      </h1>
+      <div class="text-center">
+        <p class="text-lg">
+          Meet the stellar minds behind our Astro-powered team.
+        </p>
+      </div>
 
-			<div class="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
-				<div
-					class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-				<Image class="object-cover w-full max-w-xs sm:max-w-full" src={member1} alt="Member 1" />
+      <div
+        class="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16"
+      >
+        <div
+          class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16"
+        >
+          <Image
+            class="object-cover w-full max-w-xs sm:max-w-full"
+            src={member1}
+            alt="Member 1"
+          />
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16"
+        >
+          <Image
+            class="objct-cover w-full max-w-xs sm:max-w-full"
+            src={member2}
+            alt="Member 2"
+          />
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16"
+        >
+          <Image
+            class="object-cover w-full max-w-xs sm:max-w-full"
+            src={member3}
+            alt="Member 3"
+          />
+        </div>
 
-				</div>
-				<div class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-				<Image class="objct-cover w-full max-w-xs sm:max-w-full" src={member2} alt="Member 2" />
-				</div>
-				<div class="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-				<Image class="object-cover w-full max-w-xs sm:max-w-full" src={member3} alt="Member 3">
-				</div>
-			  </div>
-
-
-			  <div class="prose-lg mx-auto mt-14 text-center ">
-				<p>
-					In the vast celestial expanse of the digital landscape, Astrowrite stands as a beacon of diverse perspectives and creative collaboration. Founded by a team of passionate individuals, our blog transcends conventional boundaries, weaving a tapestry that reflects the richness of human experience. United by the powerful toolset of Astro, we curate content that spans the spectrum of interests, from technology trends to cultural explorations and everything in between. Each team member brings a unique constellation of skills, contributing to a harmonious blend that fuels our collective mission: to inspire, inform, and engage readers from all walks of life.
-				</p>
-				<p>
-					At Astrowrite, our commitment goes beyond the digital realm. We are more than just content creators; we are storytellers, explorers, and advocates for the beauty of shared knowledge. With a shared vision of fostering a community where ideas converge and flourish, our diverse backgrounds and expertise converge to create a platform that invites everyone to embark on an enriching journey of discovery. Join us as we navigate the cosmos of ideas, sparking conversations, and igniting the spirit of curiosity in every visitor to Astrowrite.
-				</p>
-				<p>
-				  <a href="/contact">Get in touch</a>
-				</p>
-			  </div>
-		</section>
-	</body>
+        <div class="prose-lg mx-auto mt-14 text-center">
+          <p>
+            In the vast celestial expanse of the digital landscape, Astrowrite
+            stands as a beacon of diverse perspectives and creative
+            collaboration. Founded by a team of passionate individuals, our blog
+            transcends conventional boundaries, weaving a tapestry that reflects
+            the richness of human experience. United by the powerful toolset of
+            Astro, we curate content that spans the spectrum of interests, from
+            technology trends to cultural explorations and everything in
+            between. Each team member brings a unique constellation of skills,
+            contributing to a harmonious blend that fuels our collective
+            mission: to inspire, inform, and engage readers from all walks of
+            life.
+          </p>
+          <p>
+            At Astrowrite, our commitment goes beyond the digital realm. We are
+            more than just content creators; we are storytellers, explorers, and
+            advocates for the beauty of shared knowledge. With a shared vision
+            of fostering a community where ideas converge and flourish, our
+            diverse backgrounds and expertise converge to create a platform that
+            invites everyone to embark on an enriching journey of discovery.
+            Join us as we navigate the cosmos of ideas, sparking conversations,
+            and igniting the spirit of curiosity in every visitor to Astrowrite.
+          </p>
+          <p>
+            <a href="/contact">Get in touch</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
