@@ -6,6 +6,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../constants";
 const {
   title = "A blog platform that transcends boundaries, offering an eclectic mix of engaging content spanning various subjects.",
 } = Astro.props;
+
+interface Props {
+  title?: string;
+}
 ---
 
 <html lang="en">
