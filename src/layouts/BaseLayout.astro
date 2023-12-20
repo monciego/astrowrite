@@ -1,13 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/logo.png";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../constants";
 
-const { title = "Astrowrite" } = Astro.props;
+const {
+  title = "A blog platform that transcends boundaries, offering an eclectic mix of engaging content spanning various subjects.",
+} = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content={SITE_DESCRIPTION} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +21,7 @@ const { title = "Astrowrite" } = Astro.props;
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{SITE_TITLE} - {title}</title>
   </head>
   <body class="font-sans">
     <nav class="my-8">
